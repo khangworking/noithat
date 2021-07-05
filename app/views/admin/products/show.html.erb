@@ -1,0 +1,7 @@
+<ul>
+  <li>Name: <%= @product.name %></li>
+  <li>Description: <%= @product.description %></li>
+  <li>Image: <%= @product.image.attached? ? image_tag(url_for(@product.image)) : image_tag('default.jpeg') %></li>
+</ul>
+<%= link_to 'Edit', edit_admin_product_path(@product) %>
+<%= link_to 'Back', admin_products_path %>
