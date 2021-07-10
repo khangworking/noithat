@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+.admin-menu-item {
+  @apply transition-all duration-300 ease-linear flex justify-start items-center w-full px-2 rounded-sm cursor-pointer hover:shadow-lg hover:bg-white hover:text-gray-800;
+}
+
+.admin-menu-item-active {
+  @apply admin-menu-item shadow-lg bg-white text-gray-800;
+}
+
+@import "tailwindcss/utilities";

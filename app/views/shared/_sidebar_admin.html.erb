@@ -1,0 +1,23 @@
+<div class="flex flex-col h-full">
+  <div class="flex-none h-10 leading-10 text-center uppercase text-2xl font-bold">noithat</div>
+  <div class="flex-grow">
+    <ul>
+      <li class="p-2">
+        <%= link_to admin_root_path, class: "admin-menu-item #{current_page?(controller: 'dashboard') && 'admin-menu-item-active'}" do %>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+          </svg>
+          <div class='px-3 py-2 flex-grow'>Dashboard</div>
+        <% end %>
+      </li>
+      <li class="p-2">
+        <%= link_to admin_products_path, class: "admin-menu-item #{current_page?(controller: 'products') && 'admin-menu-item-active'}" do %>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <div class='px-3 py-2 flex-grow'>Products</div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
